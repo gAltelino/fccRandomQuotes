@@ -1,0 +1,45 @@
+<!HTML5 html>
+<html>
+ <head>
+    <title>Random Quotes</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Random Quotes From Random Stuff">
+    <meta name="keywords" content="Free Code Camp, forismatic.com">
+    <meta name="author" content="Giovani Altelino">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootv4Alpha/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="script" href="jquery.js">
+</head>
+
+<body>
+   <div class="container-fluid">
+     <div class="row justify-content-center">
+       <div class="col-10" id="newcol">
+         <div class="card">
+           <div class="card-header text-center h3">
+           RANDOM QUOTES OF RANDOM STUFF
+           </div>
+            
+           <div class="card-block">
+             <blockquote class="blockquote">
+              <p id="quotes">Quote goes here</p>
+              <footer class="blockquote-footer" id="author">Author goes here</footer> 
+             </blockquote>
+             <div class="row align-items-end justify-content-center">
+             <a href="#" class="btn btn-primary" id="getQuotes" onclick="newQuotes()">Another Quote</a> 
+             
+             <a href="#" class="btn btn-info" id="twitterButton" target="_blank" data-size="large">Tweet Quote</a>
+               </div>
+           </div>
+         </div>
+          <small class="text-muted">
+             quotes sourced from <a href="https://forismatic.com/en/" target="_blank"> forismatic.com</a>
+             </small>
+       </div>
+     </div>
+  </div>
+</body>
+
+
+</html>
