@@ -15,7 +15,6 @@ function newQuotes(){
     }
   })
   .done(substituteQuotes)
-  .fail(handleErr);
 };  
 
 //If sucess
@@ -32,6 +31,8 @@ function catchError(status, error) {
 
 $('#twitterButton').on('click', function twitIt(){
     
+    console.log(this);
     $(this).attr("href", 'https://twitter.com/intent/tweet?text=' + $('#quotes').text() + '  ' + $('#author').text());
+    console.log($(this).attr("href", 'https://twitter.com/intent/tweet?text=' + $('#quotes').text() + '  ' + $('#author').text()));
   
 })
